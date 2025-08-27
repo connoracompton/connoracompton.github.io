@@ -1,0 +1,56 @@
+/* Structure */
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color:lightblue;
+}
+
+#information {
+    background:white;
+    margin:auto;
+    width:75%;
+    padding:1%;
+    border-radius: 7px;
+}
+
+/* Typography */
+
+h1 {
+    color:blueviolet;
+    text-align:center; /* centers heading */
+}
+
+h2 {
+    color:teal;
+}
+
+p {
+    line-height:1.6;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;     /* removes underline */
+    color:navy;     /* navy links */
+    font-weight:bold;
+}
+
+a:hover {
+    color:red;      /* red on hover */ 
+}
+
+/* List */
+
+ol {
+    padding-left:20px;
+}
+
+li {
+    margin:8px 0;
+}
+
+
+
+
+

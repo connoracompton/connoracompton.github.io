@@ -1,0 +1,42 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/background.jpg);
+    background-size:cover;  /*covers entire page; remove */
+}
+
+#content {
+    background:beige;
+    width:70%;
+    margin:auto;    /*center*/
+    padding:1%;   /*get text away from edge*/
+    border-radius:5px;  /*round corners*/
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border:1px solid #D9B596;
+    padding:5px;    /*Top and bottom 5, right and left 10 */
+}
+
+th{
+    background:#D9B596;
+}
+
+/* Images */
+#giraffe-pic{
+    box-shadow: 7px 7px #D9B596;
+}
+
+/* Typography */
+h1 {
+    color:#D9B596;
+}
+
+h2 {
+    color:#D9B596;
+}

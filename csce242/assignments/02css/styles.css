@@ -1,0 +1,63 @@
+/* Structure */
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:purple;
+}
+
+#content {
+    margin:auto;
+    background-color: white;
+    padding:20px;
+    border-radius: 12px;
+}
+
+/* Typography */
+
+h1 {
+    text-align: center;
+    color:#0d47a1;
+}
+
+h2 {
+    text-align: center;
+    color:navy;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Images */
+
+#images {
+    display: flex;
+    margin: auto;
+}
+
+#space1-pic {
+    box-shadow: 7px 7px purple;
+    margin: auto;
+}
+
+#space2-pic {
+    box-shadow: 7px 7px purple;
+    margin: auto;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1976d2;
+    color:white;
+}
