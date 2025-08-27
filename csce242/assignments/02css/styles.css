@@ -30,6 +30,13 @@ p {
 
 /* Images */
 
+img {
+    border:3px solid #444;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
 #images {
     display: flex;
     margin: auto;
@@ -48,11 +55,13 @@ p {
 /* Tables */
 table {
     border-collapse: collapse;
+    width:80%;
     margin: auto;
+    background-color: #f4f4f4;
 }
 
 td, th {
-    border: 1px solid #999;
+    border: 1px solid #333;
     padding: 10px;
     text-align: center;
 }
