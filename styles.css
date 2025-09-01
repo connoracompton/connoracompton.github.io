@@ -3,54 +3,136 @@
 body {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     background-color:lightblue;
+    margin:0;
 }
 
-#information {
-    background:white;
-    margin:auto;
-    width:75%;
-    padding:1%;
-    border-radius: 7px;
-}
+/* Header */
 
-/* Typography */
+header {
+    text-align: center;
+    background-color: #00695c;
+    color:white;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
 
 h1 {
-    color:blueviolet;
-    text-align:center; /* centers heading */
+    margin: 0;
+    font-size: 2rem;
 }
 
 h2 {
-    color:teal;
+    margin:8px 0;
+    font-weight: normal;
 }
 
 p {
-    line-height:1.6;
+    max-width: 600px;
+    font-weight: normal;
 }
 
-/* Links */
+/* Assignments */
 
-a {
-    text-decoration: none;     /* removes underline */
-    color:navy;     /* navy links */
-    font-weight:bold;
+main {
+    width:90%;
+    max-width: 1200px;
+    margin:auto;
 }
 
-a:hover {
-    color:red;      /* red on hover */ 
+main > h2 {
+    margin-bottom: 20px;
+    color:#004d40;
 }
 
-/* List */
+/*Assignments Layout */
 
-ol {
-    padding-left:20px;
+.assignments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -10px;
 }
 
-li {
-    margin:8px 0;
+.assignment {
+    background: white;
+    border: 2px solid teal;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin:10px;
+    flex: auto;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;     /*equal height layout */
+    justify-content: space-between;
 }
 
+/* Assignment Images */
 
+.assignment img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
 
+/* Assignment Text */
 
+.assignment h3{
+    color:blueviolet;
+    margin:10px 0;
+}
 
+.assignment p {
+    font-size: .95rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    flex-grow: 1;   /* makes descriptions stretch evenly */
+}
+
+/* Assignment Links */
+
+.assignment a {
+    display: inline-block;
+    padding: 8px 14px;
+    background: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+.assignment a:hover {
+    background: darkslategray;     /* gray on hover */ 
+}
+
+/* Footer */
+footer{
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+    .assignment {
+        flex: 1 1 calc(50% - 20px); /*2 per row */
+    }
+}
+
+@media (max-width:600px) {
+    .assignments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assignment {
+        width: 90%;
+        flex: none;
+    }
+}
