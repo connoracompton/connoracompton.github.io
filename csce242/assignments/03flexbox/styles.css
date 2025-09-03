@@ -1,0 +1,216 @@
+/* Structure */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: #333;
+    color:white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav{
+    background: #555;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #777;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+section {
+    flex: 3;
+    background: #fff;
+    padding: 1rem;
+    min-width: 250px;
+}
+
+aside {
+    flex: 1;
+    background: #e4e4e4;
+    padding: 1rem;
+    min-width: 200px;
+}
+
+article {
+    margin-bottom: 1.5rem;
+    background:#fafafa;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+/*Second Half Layout */
+.second-container {
+    display: flex;
+    margin: 1rem;
+    gap: 1 rem;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background: #d98b8b;
+    padding: 1rem;
+    min-width: 180px;
+    color:white;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0.5rem 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar for second page */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.side-nav {
+    background:#d98b8b;
+    width: 200px;
+    padding: 1rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.side-nav h3 {
+    margin-top: 0;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.side-nav li {
+    margin: .5rem 0;
+}
+
+.side-nav a {
+    color:white;
+    text-decoration: none;
+}
+
+.side-nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+    background: #f5f5dc;
+}
+
+/* Grid */
+.grid {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: #4f7c82;
+    color:#fff;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card img {
+    max-width: 100%;
+    margin: .5rem 0 1rem 0;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background: #d98b8b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
