@@ -108,6 +108,62 @@ main > h2 {
     background: darkslategray;     /* gray on hover */ 
 }
 
+/* Projects Layout */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -10px;
+}
+
+.project {
+    background: white;
+    border: 2px solid teal;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    flex: auto;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project img, .project iframe {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.project h3 {
+    color:blueviolet;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.project a {
+    display: inline-block;
+    padding: 8px 14px;
+    background: teal;
+    color:white;
+    border-radius: 5px;
+}
+
+.project a:hover {
+    background: darkslategray;
+}
+
 /* Footer */
 footer{
     background: navy;
@@ -132,6 +188,24 @@ footer{
     }
 
     .assignment {
+        width: 90%;
+        flex: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .project {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
         width: 90%;
         flex: none;
     }
