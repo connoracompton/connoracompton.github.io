@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 8 - If Statements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+            <div class="exercise-links">Exercise 1 | Exercise 2</div>
+            
+            <div class="menu" id="mobileMenu">
+                <ul>
+                    <li onclick="showPlanting()">Exercise 1 <span class="arrow-down" id="arrow1"></span></li>
+                    <li onclick="showDigitalClock()">Exercise 2 <span class="arrow-down" id="arrow2"></span></li>
+                </ul>
+            </div>
+
+            <div class="large-menu">
+                <ul>
+                    <li onclick="showPlanting()" id="largeMenu1" class="active">Exercise 1</li>
+                    <li onclick="showDigitalClock()" id="largeMenu2">Exercise 2</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section planting-section" id="plantingSection">
+            <label for="daysSlider">How many days has it been since watering your plant?</label>
+            <input type="range" id="daysSlider" min="1" max="12" value="1" oninput="updatePlant()">
+            <div class="range-value" id="rangeValue">1</div>
+            
+            <div class="plant-status" id="plantStatus">
+                <img src="images/stage1plant.jpg" alt="Plant Stage" class="plant-image" id="plantImage">
+                <div class="plant-message" id="plantMessage">It's been 1 days since watering your plant</div>
+                <div class="plant-advice" id="plantAdvice">Your plant is healthy and happy</div>
+            </div>
+        </div>
+
+        <div class="content-section digital-clock-section" id="digitalClockSection">
+            <div class="clock-display">
+                <div class="clock-title">Our Digital Clock</div>
+                <div class="time" id="currentTime">10:00 am</div>
+            </div>
+        </div>
+
+        <div class="footer">@connoracompton.github.io</div>
+    </div>
+
+    <!-- Link external script -->
+    <script src="script.js"></script>
+</body>
+</html>

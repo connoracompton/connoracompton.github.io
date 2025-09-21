@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #e8e8e8;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    background-color: #c8c8c8;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #555;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-toggle:hover {
+    background: #333;
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    z-index: 1000;
+    display: none;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background: #e9e9e9;
+}
+
+.menu ul li:last-child {
+    border-bottom: none;
+}
+
+.arrow-up,
+.arrow-down {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #666;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #666;
+}
+
+h1 {
+    color: #5a9;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #e88;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.exercise-links {
+    color: #5a9;
+    margin-bottom: 20px;
+}
+
+.content-section {
+    background: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.planting-section {
+    display: block;
+}
+
+.digital-clock-section {
+    display: none;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #5a9;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.range-value {
+    text-align: center;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.plant-status {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.plant-message {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #5a9;
+}
+.plant-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+.plant-advice {
+    color: #666;
+    margin-top: 5px;
+}
+
+.clock-display {
+    text-align: center;
+    padding: 30px;
+}
+
+.clock-title {
+    color: #5a9;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.time {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    color: #5a9;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Large screen menu */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .large-menu {
+        display: block;
+        background: #d8d8d8;
+        padding: 15px 20px;
+        text-align: left;
+    }
+
+    .large-menu ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .large-menu ul li {
+        color: #5a9;
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    .large-menu ul li:hover {
+        background: #c8c8c8;
+    }
+
+    .large-menu ul li.active {
+        background: #5a9;
+        color: white;
+    }
+
+    .menu {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .large-menu {
+        display: none;
+    }
+}
