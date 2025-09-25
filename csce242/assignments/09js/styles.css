@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.subtitle {
+    color: inherit;
+}
+
+.scene {
+    padding: 30px;
+    min-height: 400px;
+}
+
+.cloud {
+    width: 60px;
+    height: 40px;
+    background: white;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    width: 40px;
+    height: 20px;
+    background: black;
+    border-radius: 20px;
+}
+
+.tree {
+    display: inline-block;
+    margin: 20px;
+}
+
+.trunk {
+    width: 15px;
+    height: 40px;
+    background: saddlebrown;
+    margin: 0 auto;
+}
+
+.leaves {
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.sun, .moon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.sun {
+    background: yellow;
+}
+
+.moon {
+    background: white;
+    box-shadow: -15px 0 0 0 black;
+}
