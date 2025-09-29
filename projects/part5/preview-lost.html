@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <!-- HEADER -->
+    <!-- HEADER -->
         <header>
             <h1 class="logo">GAMEWORLD</h1>
 
@@ -19,9 +19,9 @@
                 </ul>
             </nav>
             <div class="header-right">
-                <input type="text" placeholder="Search for games, consoles, collectibles..."/>
+                <input type="text" placeholder="Search for games, consoles, collectibles...">
                 <a href="account.html">Account</a>
-                <a href="cart.html">Cart (0)</a>
+                <a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>) - $<span id="cart-total">0.00</span></a>
             </div>
         </header>
 
@@ -34,7 +34,7 @@
                 </div>
                 <p>Embark on a breathtaking journey across uncharted lands in <strong>Lost Horizon</strong>, a story-driven adventure filled with mystery, danger, and discovery. From ancient temples to hidden valleys, every step brings new secrets and challenges. Solve intricate puzzles, outsmart ruthless enemies, and uncover a forgotten legend that could change history forever. With stunning visuals, an immersive soundtrack, and heart-pounding gameplay, Lost Horizon is the ultimate quest for explorers and dreamers alike.</p>
                 <p><strong>$79.99</strong></p>
-                <button>Add to Cart</button>
+                <button class="add-to-cart" data-name="Lost Horizon" data-price="79.99">Add to Cart</button>
             </div>
         </section>
 
@@ -52,5 +52,6 @@
             <p>© 2025 GameWorld. All rights reserved.</p>
         </footer>
         <script src="nav.js"></script>
+        <script src="cart.js"></script>
     </body>
 </html>

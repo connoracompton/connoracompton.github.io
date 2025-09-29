@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <!-- HEADER -->
+    <!-- HEADER -->
         <header>
             <h1 class="logo">GAMEWORLD</h1>
 
@@ -19,9 +19,9 @@
                 </ul>
             </nav>
             <div class="header-right">
-                <input type="text" placeholder="Search for games, consoles, collectibles..."/>
+                <input type="text" placeholder="Search for games, consoles, collectibles...">
                 <a href="account.html">Account</a>
-                <a href="cart.html">Cart (0)</a>
+                <a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>) - $<span id="cart-total">0.00</span></a>
             </div>
         </header>
 
@@ -33,8 +33,8 @@
                     <img src="images/steel-vanguard.png" alt="Steel Vanguard" style="width:100%; border-radius:10px;" />
                 </div>
                 <p>Lead the charge in <strong>Steel Vanguard</strong>, a futuristic war epic that puts you at the helm of unstoppable mechanized forces. Command powerful battle mechs, customize your arsenal, and strategize across explosive battlefields where every move counts. With cinematic campaigns, intense multiplayer skirmishes, and jaw-dropping visuals, Steel Vanguard delivers the ultimate fusion of strategy and high-octane action. Rally your squad, forge your legacy, and become the steel-clad hero the world needs.</p>
-                <p><strong>$79.99</strong></p>
-                <button>Add to Cart</button>
+                <p><strong>$59.99</strong></p>
+                <button class="add-to-cart" data-name="Steel Vanguard" data-price="59.99">Add to Cart</button>
             </div>
         </section>
 
@@ -52,5 +52,6 @@
             <p>© 2025 GameWorld. All rights reserved.</p>
         </footer>
         <script src="nav.js"></script>
+        <script src="cart.js"></script>
     </body>
 </html>

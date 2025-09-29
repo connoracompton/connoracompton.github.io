@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <!-- HEADER -->
+    <!-- HEADER -->
         <header>
             <h1 class="logo">GAMEWORLD</h1>
 
@@ -19,9 +19,9 @@
                 </ul>
             </nav>
             <div class="header-right">
-                <input type="text" placeholder="Search for games, consoles, collectibles..."/>
+                <input type="text" placeholder="Search for games, consoles, collectibles...">
                 <a href="account.html">Account</a>
-                <a href="cart.html">Cart (0)</a>
+                <a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>) - $<span id="cart-total">0.00</span></a>
             </div>
         </header>
 
@@ -34,7 +34,7 @@
                 </div>
                 <p>Step into the enchanted world of <strong>Mystic Realms</strong>, mystery, and adventure collide. Explore vast kingdoms filled with mythical creatures, hidden treasures, and powerful spells waiting to be mastered. Forge your own path as a hero, uncover ancient secrets, and battle through epic quests that shape the fate of the realms. With breathtaking landscapes, immersive storytelling, and endless customization, Mystic Realms delivers an unforgettable fantasy journey for gamers of all kinds.</p>
                 <p><strong>$79.99</strong></p>
-                <button>Add to Cart</button>
+                <button class="add-to-cart" data-name="Mystic Realms" data-price="79.99">Add to Cart</button>
             </div>
         </section>
 
@@ -52,5 +52,6 @@
             <p>© 2025 GameWorld. All rights reserved.</p>
         </footer>
         <script src="nav.js"></script>
+        <script src="cart.js"></script>
     </body>
 </html>

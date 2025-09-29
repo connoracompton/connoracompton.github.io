@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <!-- HEADER -->
+    <!-- HEADER -->
         <header>
             <h1 class="logo">GAMEWORLD</h1>
 
@@ -19,9 +19,9 @@
                 </ul>
             </nav>
             <div class="header-right">
-                <input type="text" placeholder="Search for games, consoles, collectibles..."/>
+                <input type="text" placeholder="Search for games, consoles, collectibles...">
                 <a href="account.html">Account</a>
-                <a href="cart.html">Cart (0)</a>
+                <a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>) - $<span id="cart-total">0.00</span></a>
             </div>
         </header>
 
@@ -33,8 +33,8 @@
                     <img src="images/pixel-quest.png" alt="Pixel Quest" style="width:100%; border-radius:10px;" />
                 </div>
                 <p>Dive into the retro-inspired adventure of <strong>Pixel Quest</strong>, a fast-paced platformer bursting with charm and challenge. Journey through vibrant pixel-art worlds, dodge tricky traps, and battle quirky enemies as you uncover hidden secrets at every turn. With tight controls, creative power-ups, and a nostalgic chiptune soundtrack, Pixel Quest delivers classic arcade fun with a fresh modern twist — perfect for both old-school gamers and newcomers alike.</p>
-                <p><strong>$79.99</strong></p>
-                <button>Add to Cart</button>
+                <p><strong>$29.99</strong></p>
+                <button class="add-to-cart" data-name="Pixel Quest" data-price="29.99">Add to Cart</button>
             </div>
         </section>
 
@@ -52,5 +52,6 @@
             <p>© 2025 GameWorld. All rights reserved.</p>
         </footer>
         <script src="nav.js"></script>
+        <script src="cart.js"></script>
     </body>
 </html>
