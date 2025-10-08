@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const productsContainer = document.getElementById('products-container');
 
-    const jsonURL = 'https://connoracompton.github.io/connoracompton/csce242/projects/part6/games.json';
+    const jsonURL = './games.json';
         
     // Fetch the JSON data
     fetch(jsonURL)
