@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "name": "Mystic Realms",
+        "price": 49.99,
+        "genre": "RPG",
+        "platform": "PS5, Xbox, PC",
+        "rating": "E10+",
+        "img_name": "images/mystic-realms.png"
+    },
+    {
+        "_id": 2,
+        "name": "Arcade Legends",
+        "price": 29.99,
+        "genre": "Arcade",
+        "platform": "Switch, PC",
+        "rating": "E",
+        "img_name": "images/arcade-legends.png"
+    },
+    {
+        "_id": 3,
+        "name": "Steel Vanguard",
+        "price": 59.99,
+        "genre": "Action",
+        "platform": "PS5, Xbox, PC",
+        "rating": "M",
+        "img_name": "images/steel-vanguard.png"
+    },
+    {
+        "_id": 4,
+        "name": "Lost Horizon",
+        "price": 49.99,
+        "genre": "Adventure",
+        "platform": "PS5, PC",
+        "rating": "T",
+        "img_name": "images/lost-horizon.png"
+    },
+    {
+        "_id": 5,
+        "name": "Pixel Quest",
+        "price": 29.99,
+        "genre": "Platformer",
+        "platform": "All Platforms",
+        "rating": "E",
+        "img_name": "images/pixel-quest.png"
+    },
+    {
+        "_id": 6,
+        "name": "Shadow Strike",
+        "price": 59.99,
+        "genre": "Stealth",
+        "platform": "PS5, Xbox, PC",
+        "rating": "M",
+        "img_name": "images/shadow-strike.png"
+    },
+    {
+        "_id": 7,
+        "name": "Vintage Gaming Poster",
+        "price": 19.99,
+        "genre": "Collectible",
+        "platform": "N/A",
+        "rating": "N/A",
+        "img_name": "images/vintage-gaming-poster.png"
+    },
+    {
+        "_id": 8,
+        "name": "Wireless Controller",
+        "price": 69.99,
+        "genre": "Accessory",
+        "platform": "All Platforms",
+        "rating": "N/A",
+        "img_name": "images/controller.jpg"
+    }
+]

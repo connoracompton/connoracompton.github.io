@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Collectibles - GameWorld</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+
+            <button class="hamburger">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="collectibles.html">Collectibles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="account.html">Account</a>
+                <a href="cart.html" id="cart-link" class="cart-icon">
+                    🛒 (<span id="cart-count">0</span>) $<span id="cart-total">0.00</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <section class="featured">
+            <h2>Collectibles</h2>
+            <div class="products">
+                
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-figure.html">
+                            <img src="images/limited-edition-figurine.png" alt="Limited Edition Figure">
+                        </a>
+                    </div>
+                    <h3><a href="preview-figure.html">Limited Edition Figure</a></h3>
+                    <p>$89.99</p>
+                    <button class="add-to-cart" data-name="Limited Edition Figure" data-price="89.99">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-poster.html">
+                            <img src="images/vintage-gaming-poster.png" alt="Vintage Gaming Poster">
+                        </a>
+                    </div>
+                    <h3><a href="preview-poster.html">Vintage Gaming Poster</a></h3>
+                    <p>$19.99</p>
+                    <button class="add-to-cart" data-name="Vintage Gaming Poster" data-price="19.99">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-rare.html">
+                            <img src="images/rare-game-cartridge.png" alt="Rare Game Cartridge">
+                        </a>
+                    </div>
+                    <h3><a href="preview-rare.html">Rare Game Cartridge</a></h3>
+                    <p>$149.99</p>
+                    <button class="add-to-cart" data-name="Rare Game Cartridge" data-price="149.99">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+        <script src="nav.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>

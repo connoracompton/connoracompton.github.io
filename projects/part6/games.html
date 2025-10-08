@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Games - GameWorld</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+
+            <button class="hamburger">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="collectibles.html">Collectibles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="account.html">Account</a>
+                <a href="cart.html" id="cart-link" class="cart-icon">
+                    🛒 (<span id="cart-count">0</span>) $<span id="cart-total">0.00</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <section class="featured">
+            <h2>Games</h2>
+            <div class="products" id="products-container">
+                <!-- Products will be loaded here by JavaScript -->
+                <p style="text-align: center; width: 100%;">Loading games...</p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+        
+        <script src="cart.js"></script>
+        <script src="nav.js"></script>
+        <script src="load-games.js"></script>
+    </body>
+</html>
+
+<!-- 
+    PROJECT PART 6 SUBMISSION NOTE:
+    This page (games.html) loads game data from JSON using the load-games.js script.
+    The JSON file is hosted at: [YOUR GITHUB URL HERE - e.g., https://yourusername.github.io/gameworld/games.json]
+    All game products on this page are dynamically generated from the JSON data.
+-->

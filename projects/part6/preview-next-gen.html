@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Preview - GameWorld</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <!-- HEADER -->
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+
+            <button class="hamburger">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="collectibles.html">Collectibles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="account.html">Account</a>
+                <a href="cart.html" id="cart-link" class="cart-icon">
+                    🛒 (<span id="cart-count">0</span>) $<span id="cart-total">0.00</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <section class="featured">
+            <h2>Next Gen Console</h2>
+            <div class="product-card" style="max-width: 600px; margin: auto; text-align: center;">
+                <div class="img">
+                    <img src="images/next-gen.jpg" alt="Next Gen Console" style="width:100%; border-radius:10px;" />
+                </div>
+                <p>Experience the future of gaming with the<strong>Next Gen Console</strong>,built for lightning-fast performance, stunning 4K visuals, and ultra-smooth gameplay. Featuring breakthrough load times, enhanced realism, and immersive 3D audio, this console brings every world to life like never before. With a sleek design, expanded storage, and support for the latest blockbuster titles, the Next Gen Console is the ultimate upgrade for gamers ready to step into a new era.</p>
+                <p><strong>$499.99</strong></p>
+                <button class="add-to-cart" data-name="Next Gen Console" data-price="499.99">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+        <script src="nav.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>
