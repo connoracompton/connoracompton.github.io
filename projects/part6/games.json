@@ -52,23 +52,5 @@
         "platform": "PS5, Xbox, PC",
         "rating": "M",
         "img_name": "images/shadow-strike.png"
-    },
-    {
-        "_id": 7,
-        "name": "Vintage Gaming Poster",
-        "price": 19.99,
-        "genre": "Collectible",
-        "platform": "N/A",
-        "rating": "N/A",
-        "img_name": "images/vintage-gaming-poster.png"
-    },
-    {
-        "_id": 8,
-        "name": "Wireless Controller",
-        "price": 69.99,
-        "genre": "Accessory",
-        "platform": "All Platforms",
-        "rating": "N/A",
-        "img_name": "images/controller.jpg"
     }
 ]
