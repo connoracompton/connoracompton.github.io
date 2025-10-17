@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Preview - GameWorld</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <!-- HEADER -->
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+
+            <button class="hamburger">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="collectibles.html">Collectibles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="account.html">Account</a>
+                <a href="cart.html" id="cart-link" class="cart-icon">
+                    🛒 (<span id="cart-count">0</span>) $<span id="cart-total">0.00</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <section class="featured">
+            <h2>Vintage Gaming Poster</h2>
+            <div class="product-card" style="max-width: 600px; margin: auto; text-align: center;">
+                <div class="img">
+                    <img src="images/vintage-gaming-poster.png" alt="vintage-gaming-poster" style="width:100%; border-radius:10px;" />
+                </div>
+                <p>Bring the golden age of gaming to your walls with the<strong>Vintage Gaming Poster</strong>, a high-quality print that captures the bold colors and iconic style of classic arcades. Designed with retro artwork and printed on premium glossy paper, this poster is perfect for collectors, gamers, and anyone looking to add nostalgic flair to their space. Whether hung in a game room, bedroom, or office, the Vintage Gaming Poster is a timeless tribute to the games that started it all.</p>
+                <p><strong>$19.99</strong></p>
+                <button class="add-to-cart" data-name="Vintage Gaming Poster" data-price="19.99">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+        <script src="nav.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>

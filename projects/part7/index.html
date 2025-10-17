@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GAMEWORLD</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!-- HEADER -->
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+
+            <button class="hamburger">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="collectibles.html">Collectibles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="account.html">Account</a>
+                <a href="cart.html" id="cart-link" class="cart-icon">
+                    🛒 (<span id="cart-count">0</span>) $<span id="cart-total">0.00</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <h2>Welcome to GameWorld</h2>
+            <p>Your ultimate destination for games, consoles, and collectibles</p>
+        </section>
+
+        <!-- REVIEWS PREVIEW -->
+        <section class="reviews-preview">
+            <div class="reviews-preview-card">
+                <h2>What Gamers Are Saying</h2>
+                <p>Check out honest reviews from our gaming community on the latest titles, consoles, and collectibles.</p>
+                <a href="reviews.html"><button class="category-btn">Read Reviews</button></a>
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section class="categories">
+            <div class="category">
+                <div class="icon">🎮</div>
+                <h3>Games</h3>
+                <p>Latest releases and classic titles</p>
+                <a href="games.html"><button class="category-btn">Browse Games</button></a>
+            </div>
+            <div class="category">
+                <div class="icon">🕹️</div>
+                <h3>Consoles</h3>
+                <p>Gaming systems and accessories</p>
+                <a href="consoles.html"><button class="category-btn">Browse Consoles</button></a>
+            </div>
+            <div class="category">
+                <div class="icon">⭐</div>
+                <h3>Collectibles</h3>
+                <p>Acquire rare items and memorabilia</p>
+                <a href="collectibles.html"><button class="category-btn">Browse Collectibles</button></a>
+            </div>
+        </section>
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="featured">
+            <h2>Featured Products</h2>
+            <div class="products">
+                <!-- Mystic Realms -->
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-mystic.html">
+                            <img src="images/mystic-realms.png" alt="Mystic Realms">
+                        </a>
+                    </div>
+                    <h3><a href="preview-mystic.html">Mystic Realms</a></h3>
+                    <p>$49.99</p>
+                    <button class="add-to-cart" data-name="Mystic Realms" data-price="49.99">Add to Cart</button>
+                </div>
+
+                <!-- Next-Gen Gaming Console -->
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-next-gen.html">
+                            <img src="images/next-gen.jpg" alt="Next-Gen Gaming Console">
+                        </a>
+                    </div>
+                    <h3><a href="preview-next-gen.html">Next-Gen Gaming Console</a></h3>
+                    <p>$499.99</p>
+                    <button class="add-to-cart" data-name="Next-Gen Gaming Console" data-price="499.99">Add to Cart</button>
+                </div>
+
+                <!-- Limited Edition Figure -->
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-figure.html">
+                            <img src="images/limited-edition-figurine.png" alt="Limited Edition Figure">
+                        </a>
+                    </div>
+                    <h3><a href="preview-figure.html">Limited Edition Figure</a></h3>
+                    <p>$89.99</p>
+                    <button class="add-to-cart" data-name="Limited Edition Figure" data-price="89.99">Add to Cart</button>
+                </div>
+
+                <!-- Pixel Quest -->
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-pixel.html">
+                            <img src="images/pixel-quest.png" alt="Pixel Quest">
+                        </a>
+                    </div>
+                    <h3><a href="preview-pixel.html">Pixel Quest</a></h3>
+                    <p>$49.99</p>
+                    <button class="add-to-cart" data-name="Pixel Quest" data-price="49.99">Add to Cart</button>
+                </div>
+
+                <!-- Wireless Controller -->
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-controller.html">
+                            <img src="images/controller.jpg" alt="Wireless Controller">
+                        </a>
+                    </div>
+                    <h3><a href="preview-controller.html">Wireless Controller</a></h3>
+                    <p>$69.99</p>
+                    <button class="add-to-cart" data-name="Wireless Controller" data-price="69.99">Add to Cart</button>
+                </div>
+
+                <!-- Vintage Gaming Poster -->
+                <div class="product-card">
+                    <div class="img">
+                        <a href="preview-poster.html">
+                            <img src="images/vintage-gaming-poster.png" alt="Vintage Gaming Poster">
+                        </a>
+                    </div>
+                    <h3><a href="preview-poster.html">Vintage Gaming Poster</a></h3>
+                    <p>$19.99</p>
+                    <button class="add-to-cart" data-name="Vintage Gaming Poster" data-price="19.99">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+        <script src="cart.js"></script>
+        <script src="nav.js"></script>
+    </body>
+</html>

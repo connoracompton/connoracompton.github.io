@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Preview - GameWorld</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <!-- HEADER -->
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+
+            <button class="hamburger">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="collectibles.html">Collectibles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="account.html">Account</a>
+                <a href="cart.html" id="cart-link" class="cart-icon">
+                    🛒 (<span id="cart-count">0</span>) $<span id="cart-total">0.00</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <section class="featured">
+            <h2>Shadow Strike</h2>
+            <div class="product-card" style="max-width: 600px; margin: auto; text-align: center;">
+                <div class="img">
+                    <img src="images/shadow-strike.png" alt="Shadow Strike" style="width:100%; border-radius:10px;" />
+                </div>
+                <p>Step into the shadows and unleash your skills in <strong>Shadow Strike</strong>, a high-intensity action game that blends stealth, strategy, and combat. Infiltrate enemy strongholds, master silent takedowns, and adapt your tactics to outwit powerful foes. With dynamic missions, fluid movement, and cinematic visuals, Shadow Strike delivers heart-pounding excitement where every decision can mean victory or defeat. Are you ready to strike from the darkness?</p>
+                <p><strong>$59.99</strong></p>
+                <button class="add-to-cart" data-name="Shadow Strike" data-price="59.99">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+        <script src="nav.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>
