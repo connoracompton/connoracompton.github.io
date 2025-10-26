@@ -141,7 +141,7 @@ header input {
     margin-bottom: 1.5rem;
 }
 
-/* CATEGORIES (Flexbox) - CENTERED */
+/* CATEGORIES Flexbox */
 .categories {
     display: flex;
     justify-content: center;

@@ -1,0 +1,317 @@
+Here’s the updated version with **4-space indentation** applied to both CSS and HTML files:
+
+---
+
+**styles.css**
+```css
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #222;
+    --bg-light: #f9f9f9;
+    --text-dark: #333;
+    --text-light: #fff;
+    --accent: #ffcc00;
+    --border: #ddd;
+    --muted: #ccc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+header input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #eee;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+```
+
+---
+
+**about.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About - GameWorld</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="#">Account</a>
+                <a href="#">Cart (0)</a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h2>About GameWorld</h2>
+            <p>We are your one-stop shop for games, consoles, and collectibles.</p>
+        </section>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
+```
+
+---
+
+**admin.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin - GameWorld</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="#">Account</a>
+                <a href="#">Cart (0)</a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h2>Admin Dashboard</h2>
+            <p>Placeholder for product management, orders, and user settings.</p>
+        </section>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
+```
+
+---
+
+**checkout.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Checkout - GameWorld</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="#">Account</a>
+                <a href="#">Cart (0)</a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h2>Checkout</h2>
+            <p>Complete your order below (form placeholder).</p>
+            <form>
+                <label>Name: <input type="text"></label><br><br>
+                <label>Address: <input type="text"></label><br><br>
+                <label>Payment Info: <input type="text"></label><br><br>
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
+```
+
+---
+
+**contact.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact - GameWorld</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="#">Account</a>
+                <a href="#">Cart (0)</a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h2>Contact Us</h2>
+            <p>Send us a message below (form placeholder).</p>
+            <form>
+                <label>Name: <input type="text"></label><br><br>
+                <label>Email: <input type="email"></label><br><br>
+                <label>Message:<br><textarea></textarea></label><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
+```
