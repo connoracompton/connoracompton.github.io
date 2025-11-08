@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact - GameWorld</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <h1 class="logo">GAMEWORLD</h1>
+
+            <button class="hamburger">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="collectibles.html">Collectibles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <input type="text" placeholder="Search...">
+                <a href="account.html">Account</a>
+                <a href="cart.html" id="cart-link" class="cart-icon">
+                    🛒 (<span id="cart-count">0</span>) $<span id="cart-total">0.00</span>
+                </a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you!</p>
+        </section>
+
+        <div class="contact-wrapper">
+            <!-- CONTACT FORM -->
+            <div class="form-section">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <label>Name *</label>
+                    <input type="text" id="name" required>
+                    
+                    <label>Email *</label>
+                    <input type="email" id="email" required>
+                    
+                    <label>Message *</label>
+                    <textarea id="message" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+                
+                <div id="successMsg" style="display:none;">✓ Message sent successfully!</div>
+                <div id="errorMsg" style="display:none;">✕ Please fill all fields correctly.</div>
+            </div>
+
+            <!-- IFRAME -->
+            <div class="map-section">
+                <h3>Find Us</h3>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 GameWorld. All rights reserved.</p>
+        </footer>
+        
+        <script src="nav.js"></script>
+        <script src="cart.js"></script>
+        <script src="contact.js"></script>
+    </body>
+</html>
